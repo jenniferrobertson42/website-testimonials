@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom Styles -->
+  <style>
+    /* Global styling */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f6eee9;
+    }
+
+    .card {
+      background-color: #C77F5D;
+    }
+
+    /* Testimonial carousel specific styling */
+    .ezy__testimonial18 {
+      padding: 60px 0;
+      background-color: #C77F5D;
+      color: #fff;
+      overflow: hidden;
+      border-radius: 20px;
+      margin: 20px;
+      /* Added margin to all sides */
+    }
+
+    #ezy__testimonial18-carousel {
+      margin-bottom: -30px;
+    }
+
+    .ezy__testimonial18 .carousel-indicators {
+      bottom: -20px;
+    }
+
+    .ezy__testimonial18 .carousel-indicators li {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #1e2329;
+      opacity: 1;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .ezy__testimonial18 .carousel-indicators li.active {
+      background-color: #fff;
+      opacity: 1;
+    }
+
+    .ezy__testimonial18 .carousel-control-prev,
+    .ezy__testimonial18 .carousel-control-next {
+      margin-top: 100px;
+      margin-left: -50px;
+      margin-right: -50px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(30, 35, 41, 0.5);
+      border-radius: 50%;
+      border: none;
+      font-size: 30px;
+      line-height: 50px;
+      color: #fff;
+    }
+
+    .ezy__testimonial18 .carousel-control-prev:hover,
+    .ezy__testimonial18 .carousel-control-next:hover {
+      background-color: rgba(30, 35, 41, 0.5);
+    }
+
+    .ezy__testimonial18 .carousel-item {
+      text-align: center;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial20_GRz5FCqP-rating [class*="fa-"] {
+      font-size: 20px;
+      color: rgba(255, 215, 0, 0.2);
+    }
+
+    .ezy__testimonial18 .ezy__testimonial20_GRz5FCqP-rating [class*="fa-"].active {
+      color: rgba(255, 215, 0, 1);
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-img {
+      width: 45px;
+      height: 45px;
+      margin-top: -40px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-item {
+      border: none;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      margin-top: -25px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-title {
+      font-size: 12px;
+      color: #D3D3D3;
+      margin-top: -5px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-content {
+      font-size: 22px;
+      line-height: 1.6;
+      margin-top: -20px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote {
+      font-size: 24px;
+      color: #6c757d;
+      position: absolute;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote-left {
+      top: -15px;
+      left: 15px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote-right {
+      bottom: -15px;
+      right: 15px;
+    }
+
+    /* Ensure consistent indicator visibility */
+    .d-none {
+      display: none !important;
+    }
+
+    .carousel-indicators li {
+      display: inline-block;
+      /* Ensure indicators are inline */
+    }
+  </style>
+</head>
+
+<body>
+  <section class="ezy__testimonial18">
+    <div class="container">
+      <div id="ezy__testimonial18-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was SO helpful! I have been in a career rut lately, on what direction to go with so many
+                options out there. Jen was professional, full of great advice and gave me the coaching and tools
+                necessary to take the next step. I am grateful for her services and excited for my future!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Akasha</h4>
+                  <!-- Removed profession, but kept the container div -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Not only is Jennifer's expertise unparalleled, her approach to this process is genuinely thoughtful and
+                methodical - targeting each client's individual needs and results. Career Navigator felt like a gift to
+                me and my family.
+                ❤️
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Cari</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was super helpful and awesome the entire time! Great communication and overall a super kind and
+                nice person to work with! Love her work!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Kara
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                If you are looking to set career goals, this is the place to start. The evaluation tools will narrow
+                your interest to a career that will not only be rewarding, but you will enjoy it as well. Synthesize
+                your passions with your abilities, it's worth every penny!!!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2"> Greg
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer is the epitome of professionalism! She has thorough knowledge of the material as she presents
+                it to her clients. I would recommend her for anyone looking for career development
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Maria</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Finding the dream career has always been difficult for me, especially because I am legally blind. I was
+                concerned that my evaluation would place me in a career that wouldn’t be conducive/feasible/achievable
+                given my limitations.
+                I was wrong. Once my assessment was complete I was able to narrow my search to find the perfect fit for
+                me. There are limitless opportunities once you confidently know your direction. There are no
+                limitations.​
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Leah</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was amazing. I was so lost as what to do with my career and what would even make me happy.
+                Jennifer was friendly and encouraging and her process and tools finally put me on a career path that
+                finally
+                makes sense and will bring me happiness
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Sami</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer Robertson offers professional career guidance and testing. Jennifer evaluates the responses
+                and compiles a detailed report that correlates your skills, interests and talents with various
+                professions that you would most likely be interested in based on your assessment results. The reports
+                are a wonderful tool for helping to narrow your focus on professions that map your unique interests
+                and strengths.
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">Dana</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was such a joy to work with. She is extremely knowledgeable and resourceful. As someone
+                transitioning between careers, she was attuned to my worries and comforted me that I can find something
+                related to my skill set. She was especially helpful in showing me resources of the types of jobs I might
+                want to work and the requirements necessary to attain employment. I cannot stress enough how much she
+                went out of her way to be accessible and responsive to various concerns and requests. She also gave me
+                great tools and ideas for improving my resume to leverage my strengths. I highly recommend her to anyone
+                needing career-related services.
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <h4 class="ezy__testimonial18-name mb-2">S. Smith</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <a class="carousel-control-prev" href="#ezy__testimonial18-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#ezy__testimonial18-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+          <!-- Carousel Indicators -->
+          <ol class="carousel-indicators" id="carousel-indicators">
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="1" class="d-none d-md-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="2" class="d-none d-md-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="3" class="d-none d-md-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="4" class="d-none d-md-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="5" class="d-none d-lg-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="6" class="d-none d-lg-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="7" class="d-none d-lg-block"></li>
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="8" class="d-none d-lg-block"></li>
+            <!-- New indicator -->
+          </ol>
+
+
+
+        </div>
+      </div>
+  </section>
+
+  <!-- Bootstrap Bundle with Popper.js for Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script to activate the carousel and automatic sliding -->
+  <script>
+    $(document).ready(function () {
+      $('#ezy__testimonial18-carousel').carousel();
+
+      // Automatic slide change after 10 seconds
+      setInterval(function () {
+        $('#ezy__testimonial18-carousel').carousel('next');
+      }, 10000);
+
+      $('#ezy__testimonial18-carousel').on('slide.bs.carousel', function (e) {
+        var $current = $(e.relatedTarget);
+        var idx = $current.index();
+        var itemsCount = $('#ezy__testimonial18-carousel .carousel-item').length;
+
+        // Remove active class from all indicators
+        $('#carousel-indicators li').removeClass('active');
+
+        // Add active class to the current slide's indicator
+        $('#carousel-indicators li[data-slide-to="' + idx + '"]').addClass('active');
+
+        // Show the current slide's indicator and its adjacent ones
+        showThreeIndicators(idx, itemsCount);
+      });
+
+      function showThreeIndicators(idx, itemsCount) {
+        // Calculate indices for adjacent indicators
+        var prevIdx = (idx - 1 + itemsCount) % itemsCount;
+        var nextIdx = (idx + 1) % itemsCount;
+
+        // Hide all indicators initially
+        $('#carousel-indicators li').addClass('d-none');
+
+        // Show only the current, previous, and next indicators
+        $('#carousel-indicators li[data-slide-to="' + prevIdx + '"]').removeClass('d-none');
+        $('#carousel-indicators li[data-slide-to="' + idx + '"]').removeClass('d-none');
+        $('#carousel-indicators li[data-slide-to="' + nextIdx + '"]').removeClass('d-none');
+      }
+    });
+  </script>
+</body>
+
+</html>
